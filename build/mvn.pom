@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.mdcmainnet</groupId>
+  <artifactId>geth</artifactId>
+  <version>{{.Version}}</version>
+  <packaging>aar</packaging>
+
+  <name>Android eswarm Client</name>
+  <description>Android port of the eswarm libraries and node</description>
+  <url>https://github.com/gauss-project/eswarm</url>
+  <inceptionYear>2015</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License, Version 3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>MDC</name>
+    <url></url>
+  </organization>
+
+  <developers>
+    <developer>
+      <id>plotozhu</id>
+      <name>plotozhu</name>
+      <email></email>
+      <url>https://github.com/gauss-project/eswarm/issues/</url>
+      <properties>
+        <picUrl>https://github.com/gauss-project/eswarm/issues/</picUrl>
+      </properties>
+    </developer>
+  </developers>
+
+  <contributors>{{range .Contributors}}
+    <contributor>
+      <name>{{.Name}}</name>
+      <email>{{.Email}}</email>
+    </contributor>{{end}}
+  </contributors>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/gauss-project/eswarm/issues/</url>
+  </issueManagement>
+
+  <scm>
+    <url>https://github.com/gauss-project/eswarm</url>
+  </scm>
+</project>

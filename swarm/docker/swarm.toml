@@ -1,0 +1,33 @@
+# swarm 配置文件
+
+#Network ID
+NetworkID = 1278
+
+#Path to the geth configuration directory
+
+#Path = “/.swarm”
+
+# 启动节点定义
+#BootNodes = ["enode://664135d9c0ffe747ea0a2077266749e8717107811bb764414c1c52e45550410429c067b16e2e00cdb54e85579404be32e5dec821e97c04bc72d26a51ee57983a@172.16.1.10:30399"]
+
+#swarm 节点账户相关设置
+#BzzAccount = "9a29e6bb066a352f14e572cd2079c6e12629d0e1"
+
+#http服务跨域
+Cors = "*"
+
+ListenAddr = "0.0.0.0"
+
+Port = "8500"
+
+
+SwapEnabled = false
+
+
+#
+LightNodeEnabled = false
+
+
+ServerAddrs =  []string{"http://172.16.1.10:4000/apis/v1/receipts"}
+
+CentralAddr = ["http://172.16.1.10:8500"]
